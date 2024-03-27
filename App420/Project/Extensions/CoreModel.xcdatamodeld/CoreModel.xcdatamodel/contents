@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22757" systemVersion="23B74" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="InventoryModel" representedClassName="InventoryModel" syncable="YES" codeGenerationType="class">
+        <attribute name="invChange" optional="YES" attributeType="String"/>
+        <attribute name="invColor" optional="YES" attributeType="String"/>
+        <attribute name="invDescription" optional="YES" attributeType="String"/>
+        <attribute name="invDirection" optional="YES" attributeType="String"/>
+        <attribute name="invName" optional="YES" attributeType="String"/>
+        <attribute name="invPrice" optional="YES" attributeType="String"/>
+        <attribute name="invStatus" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TransModel" representedClassName="TransModel" syncable="YES" codeGenerationType="class">
+        <attribute name="transAmount" optional="YES" attributeType="String"/>
+        <attribute name="transDate" optional="YES" attributeType="String"/>
+        <attribute name="transMetal" optional="YES" attributeType="String"/>
+        <attribute name="transTrans" optional="YES" attributeType="String"/>
+    </entity>
+</model>
