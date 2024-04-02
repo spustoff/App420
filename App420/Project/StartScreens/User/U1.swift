@@ -12,17 +12,18 @@ struct U1: View {
 
         ZStack {
             
-            Color.white
+            Color("bg4")
                 .ignoresSafeArea()
             
             VStack {
                 
                 Text("Win your money")
-                    .foregroundColor(Color("prim"))
+                    .foregroundColor(.white)
                     .font(.system(size: 28, weight: .bold))
+                    .padding(.top)
                 
                 Text("Get the chance to get extreme bonuses")
-                    .foregroundColor(Color("prim"))
+                    .foregroundColor(.white)
                     .font(.system(size: 20, weight: .bold))
                     .multilineTextAlignment(.center)
                     .frame(width: 300)
@@ -45,7 +46,7 @@ struct U1: View {
                         .font(.system(size: 15, weight: .regular))
                         .frame(maxWidth: .infinity)
                         .frame(height: 50)
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color("prim")))
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color("primary2")))
                 })
                 .padding()
             }

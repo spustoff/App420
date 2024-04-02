@@ -16,7 +16,7 @@ struct Not: View {
 
         ZStack {
             
-            Color.white
+            Color("bg4")
                 .ignoresSafeArea()
             
             
@@ -31,7 +31,7 @@ struct Not: View {
             VStack {
                 
                 Text("Don’t miss\nanything important")
-                    .foregroundColor(Color("prim"))
+                    .foregroundColor(.white)
                     .font(.system(size: 28, weight: .bold))
                     .multilineTextAlignment(.center)
                     .padding()
@@ -54,7 +54,7 @@ struct Not: View {
                         .font(.system(size: 15, weight: .regular))
                         .frame(maxWidth: .infinity)
                         .frame(height: 50)
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color("prim")))
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color("primary2")))
                 })
                 .padding()
             }
@@ -72,7 +72,7 @@ struct Not: View {
                     }, label: {
                         
                         Image(systemName: "xmark")
-                            .foregroundColor(Color("prim"))
+                            .foregroundColor(.white)
                             .font(.system(size: 22, weight: .bold))
                     })
                 }

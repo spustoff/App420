@@ -13,19 +13,20 @@ struct Reviews: View {
 
         ZStack {
             
-            Color.white
+            Color("bg4")
                 .ignoresSafeArea()
             
             VStack {
                 
                 Text("Rate our app\nin the AppStore")
-                    .foregroundColor(Color("prim"))
+                    .foregroundColor(.white)
                     .font(.system(size: 32, weight: .bold))
                     .multilineTextAlignment(.center)
                     .frame(width: 300)
+                    .padding(.top)
                 
                 Text("Make the app even better")
-                    .foregroundColor(Color("prim"))
+                    .foregroundColor(.white)
                     .font(.system(size: 20, weight: .bold))
                     .multilineTextAlignment(.center)
                     .frame(width: 300)
@@ -35,6 +36,8 @@ struct Reviews: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .padding(40)
+                
+                Spacer()
                 
                 NavigationLink(destination: {
                     
@@ -48,7 +51,7 @@ struct Reviews: View {
                         .font(.system(size: 15, weight: .regular))
                         .frame(maxWidth: .infinity)
                         .frame(height: 50)
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color("prim")))
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color("primary2")))
                 })
                 .padding()
             }
